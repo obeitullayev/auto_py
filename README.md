@@ -2,4 +2,4 @@
 
 Repository for course https://stepik.org/course/575/
 
-Practice using python language and framework Pytest.
+Practice using Python language and framework Pytest.
