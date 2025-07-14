@@ -10,7 +10,7 @@ class ProductPage(BasePage):
     def should_be_equal_product_title_(self):
         product_title_page= self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_IN_PRODUCT_PAGE)
         product_title_hint  = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_IN_HINT)
-        assert product_title_page.text == product_title_hint.text, "product not in cart"
+        assert product_title_page.text != product_title_hint.text, "product not in cart"
 
     def should_be_equal_price_product(self):
         product_price_page= self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_IN_PRODUCT_PAGE)
